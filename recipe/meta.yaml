@@ -261,6 +261,9 @@ about:
   dev_url: https://github.com/google/or-tools
 
 extra:
+  anaconda-services:
+    ref: https://anaconda.zendesk.com/agent/tickets/55704
+    reason: Client request
   recipe-maintainers:
     - wolfv
     - BastianZim
