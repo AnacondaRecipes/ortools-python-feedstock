@@ -265,6 +265,8 @@ extra:
     ref: https://anaconda.zendesk.com/agent/tickets/55704
     reason: Client request
   recipe-maintainers:
+    - ianaobi
+  recipe-maintainers:
     - wolfv
     - BastianZim
     - h-vetinari
