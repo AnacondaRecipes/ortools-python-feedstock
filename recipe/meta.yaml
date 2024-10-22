@@ -59,9 +59,9 @@ outputs:
         - {{ compiler('cxx') }}
       host:
         # these are only here for proper run-exports
-        - libabseil
+        - libabseil ==20230125.3
         - libprotobuf
-        - re2
+        - re2 ==1.2.11
         - zlib
         - coin-or-utils
         - coin-or-osi
