@@ -37,7 +37,7 @@ requirements:
     - libabseil ==20230125.3
     - libprotobuf
     - re2
-    - zlib 
+    - zlib ==1.2.13 
     # coin or deps
     - coin-or-utils
     - coin-or-osi
