@@ -23,7 +23,7 @@ fortran_compiler: gfortran
 ignore_build_only_deps:
 - python
 - numpy
-libabseil: '20230125'
+libabseil: '20240116'
 libprotobuf: '4.25'
 lua: '5'
 numpy: '1.23'
