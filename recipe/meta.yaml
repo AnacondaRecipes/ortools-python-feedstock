@@ -30,14 +30,13 @@ requirements:
     - ninja
     - pkg-config
 #    - libprotobuf  # [build_platform != target_platform]
-    - libprotobuf
   host:
     # eigen does not have a run-export but is header-only
     - eigen
-    - libabseil ==20230125.3
+    - libabseil 
     - libprotobuf
     - re2
-    - zlib ==1.2.13 
+    - zlib 
     # coin or deps
     - coin-or-utils
     - coin-or-osi
@@ -60,7 +59,7 @@ outputs:
         - {{ compiler('cxx') }}
       host:
         # these are only here for proper run-exports
-        - libabseil ==20230125.3
+        - libabseil 
         - libprotobuf
         - re2 
         - zlib 
@@ -168,7 +167,7 @@ outputs:
         - ninja
         - pkg-config
         - swig >=4.0
-        - libprotobuf  # [build_platform != target_platform]
+#        - libprotobuf  # [build_platform != target_platform]
       host:
         # find_package(ortools) wants to find the binaries as well
         - {{ pin_subpackage('ortools-cpp', exact=True) }}
