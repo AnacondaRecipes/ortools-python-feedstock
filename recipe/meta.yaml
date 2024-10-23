@@ -36,7 +36,7 @@ requirements:
     - libabseil ==20230125.3
     - libprotobuf
     - re2
-    - zlib ==1.2.11
+    - zlib ==1.2.13
     # coin or deps
     - coin-or-utils
     - coin-or-osi
@@ -61,8 +61,8 @@ outputs:
         # these are only here for proper run-exports
         - libabseil ==20230125.3
         - libprotobuf
-        - re2 ==1.2.11
-        - zlib
+        - re2 
+        - zlib ==1.2.13
         - coin-or-utils
         - coin-or-osi
         - coin-or-clp
