@@ -29,14 +29,14 @@ requirements:
     - cmake
     - ninja
     - pkg-config
-    - libprotobuf  # [build_platform != target_platform]
+#    - libprotobuf  # [build_platform != target_platform]
   host:
     # eigen does not have a run-export but is header-only
     - eigen
-    - libabseil
+    - libabseil 
     - libprotobuf
     - re2
-    - zlib
+    - zlib 
     # coin or deps
     - coin-or-utils
     - coin-or-osi
@@ -59,10 +59,10 @@ outputs:
         - {{ compiler('cxx') }}
       host:
         # these are only here for proper run-exports
-        - libabseil
+        - libabseil 
         - libprotobuf
-        - re2
-        - zlib
+        - re2 
+        - zlib 
         - coin-or-utils
         - coin-or-osi
         - coin-or-clp
@@ -167,7 +167,7 @@ outputs:
         - ninja
         - pkg-config
         - swig >=4.0
-        - libprotobuf  # [build_platform != target_platform]
+#        - libprotobuf  # [build_platform != target_platform]
       host:
         # find_package(ortools) wants to find the binaries as well
         - {{ pin_subpackage('ortools-cpp', exact=True) }}
@@ -264,6 +264,9 @@ extra:
   anaconda-services:
     ref: https://anaconda.zendesk.com/agent/tickets/55704
     reason: Client request
+  recipe-maintainers:
+    - ianaobi
+    - bkreider
   recipe-maintainers:
     - wolfv
     - BastianZim
