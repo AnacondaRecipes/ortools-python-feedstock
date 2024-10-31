@@ -34,7 +34,7 @@ requirements:
     # eigen does not have a run-export but is header-only
     - eigen
     - libabseil 
-    - libprotobuf
+    - libprotobuf >=4.25
     - re2
     - zlib 
     # coin or deps
@@ -60,7 +60,7 @@ outputs:
       host:
         # these are only here for proper run-exports
         - libabseil 
-        - libprotobuf
+        - libprotobuf >=4.25
         - re2 
         - zlib 
         - coin-or-utils
@@ -119,7 +119,7 @@ outputs:
         - {{ pin_subpackage('libortools', exact=True) }}
         # for proper run-exports
         - libabseil
-        - libprotobuf
+        - libprotobuf >=4.25
       run:
         - {{ pin_subpackage('libortools', exact=True) }}
     test:
@@ -179,10 +179,10 @@ outputs:
         - numpy
         - mypy-protobuf
 #        - protobuf >=4.21.12
-        - protobuf
+        - protobuf >=4.25
         - scipy >=1.10
         # match protobuf version from libortools to help solver
-        - libprotobuf
+        - libprotobuf >=4.25
         # other C/C++ deps
         - eigen
         - libabseil
@@ -202,7 +202,7 @@ outputs:
         - mypy-protobuf
         - {{ pin_compatible('numpy') }}
 #        - protobuf >=4.21.12 
-        - protobuf  
+        - protobuf >=4.25
         - scipy >=1.10
         # Source: https://github.com/google/or-tools/blob/stable/ortools/python/setup.py.in#L44
 
