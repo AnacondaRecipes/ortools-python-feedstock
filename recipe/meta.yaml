@@ -178,7 +178,8 @@ outputs:
         - absl-py >=0.13
         - numpy
         - mypy-protobuf
-        - protobuf >=4.21.12
+#        - protobuf >=4.21.12
+        - protobuf
         - scipy >=1.10
         # match protobuf version from libortools to help solver
         - libprotobuf
@@ -200,7 +201,8 @@ outputs:
         - absl-py >=0.13
         - mypy-protobuf
         - {{ pin_compatible('numpy') }}
-        - protobuf >=4.21.12
+#        - protobuf >=4.21.12 
+        - protobuf  
         - scipy >=1.10
         # Source: https://github.com/google/or-tools/blob/stable/ortools/python/setup.py.in#L44
 
